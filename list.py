@@ -107,7 +107,7 @@ test = input("Enter String: ")
 test_list = test.split()
 count = len(test_list)
 print("no of words: ",count)
-'''
+
 
 # python code
 test = input("Enter a string: ")
@@ -118,3 +118,32 @@ for i in L:
         i="A"
     str1+=i
 print(str1)
+'''
+# python code
+list1 = [5,10,15,20,25,50,20]
+for i in range(len(list1)):
+    if list1[i]==50:
+        list1[i]=200
+        break
+
+print(list1)
+
+# python code
+list1 = [5,20,15,20,15,50,15]
+i=0
+while i<len(list1):
+    if list1[i] == 15:
+        list1.pop(i)
+    else:
+        i+=1
+print(list1)
+
+# python code
+L1 = [10,20,30,40]
+L2 = [111,222,333,444]
+for i in range(len(L1)):
+    print(L1[i],end=" ")
+    print(L2[i])
+for i in range(len(L1)):
+    print(L1[i],end=" ")
+    print(L2[-i-1])
