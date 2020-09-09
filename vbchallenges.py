@@ -1,5 +1,3 @@
-
-
 def ques(A,B):
     if B in (A+A) and len(A)>=len(B):
         return True
